@@ -19,3 +19,28 @@ Because of this problem, some user may change to use other apps with more guidan
 ## Where are you going to pull the data from?
 	
 Zillow , Craiglist or other rental websites.
+
+# UI Wireframe Review
+1.index page:
+On top of the index page, there is a navbar. We support user register, login function. And a button for back-to-home page.
+The main content of the index page is a dashboad including the following buttons linked to different functions. See below.
+
+2. Price Trend page:
+On this page , we provide the function of Price Trend. That is, a time series of average price change of houses in Pittsburgh area.
+This is implemented using data visualization in python and the graph is generated from our django backend.
+
+3.Price Distribution page:
+On this page, we provide the function of Price Distribution. There is a map showing the price difference in different districts like Shadyside, Green Field or Squirrel hill. Map will be colored differently according to the price.
+
+4.Search page:
+This page provide the function of searching specific house resources using key word such as "two bed room" or anything that could be found in description.
+
+5.Favorate page:
+This page is a favorate list for user to keep a record of his favorate house resouces.
+
+6.Message Board page:
+This page is for user communicating and sharing house resources like selling or renting.
+
+Please see the following screenshots.
+![alt text](https://github.com/DongZuo/OfferHunter/blob/master/media/profile_images/index1.jpg "index1")
+![alt text](https://github.com/DongZuo/OfferHunter/blob/master/media/profile_images/index2.jpg "index2")
