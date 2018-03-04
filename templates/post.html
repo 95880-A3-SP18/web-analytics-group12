@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}post {% endblock %}
+
+{% block body_block %}
+    </br></br></br></br>
+
+<ul>
+<h2>Message Board</h2>
+  {% for post in object_list %}
+    <li>{{ post }}</li>
+  {% endfor %}
+</ul>
+    <div class="container marketing">
+        </br></br></br>
+            <div class="row">
+                <div class="col-lg-4">
+
+        <form id="search" method="post" action="post">
+         {{form}}
+
+          {% csrf_token %}
+
+          <input type="submit" name="submit" value="Make A Post" />
+        </form>
+        </div></div></div>
+
+
+{% endblock %}
