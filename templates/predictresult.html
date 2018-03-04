@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Your rent prediction{% endblock %}
+
+{% block body_block %}
+ <div class="container marketing">
+     </br></br></br>
+     <img src="/static/images/house.jpg" width="700" height="500"/>
+     </br></br></br>
+     <div class="page-header"><h2>An estimation of you rent is ${{predict }}</h2></div>
+</div>
+{% endblock %}

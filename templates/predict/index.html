@@ -1,0 +1,109 @@
+<!doctype html>
+
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Index {% endblock %}
+
+{% block body_block %}
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="{% static 'images/banner1.jpg' %}" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+
+              <h1>Rent-It</h1>
+              <p> Rent-It is a web application designed and coded by Dong Zuo, Yuzhe Yin and Zhuhan Jiao. The purpose for this application is to collect housing information and provide suggestions for house seekers.</p>
+{#              <p><a class="btn btn-lg btn-primary" href="{% url 'register' %}" role="button">Sign up now</a></p>#}
+
+
+            </div>
+          </div>
+        </div>
+
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-square" src="{% static 'images/predict2.png' %}" alt="predict" width="120" height="120">
+          <h2>Predict Price</h2>
+          <p>I want to predict the rent of my dream house.</p>
+          <p><a class="btn btn-default" href="predictform" role="button">Predict&raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-square" src="{% static 'images/distribution.jpg' %}" alt="recommend" width="120" height="120">
+          <h2>Price Distribution</h2>
+          <p>I want to find out the distribution of rent .</p>
+          <p><a class="btn btn-default" href="distribution" role="button">Distribution &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{% static 'images/distance.png' %}" alt="information board" width="120" height="120">
+          <h2>Distance</h2>
+          <p>I want to know the relationship between price and distance to school.</p>
+          <p><a class="btn btn-default" href="distance" role="button">Distance &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{% static 'images/timetrend.png' %}" alt="search" width="120" height="120">
+          <h2>Time Series</h2>
+          <p>I want to know the time trend. </p>
+          <p><a class="btn btn-default" href="timeseries" role="button">Time Series &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+          <img class="img-circle" src="{% static 'images/bedroom.png' %}" alt="search" width="120" height="120">
+          <h2>Bedrooms</h2>
+          <p>What's the price for different bedroom numbers?</p>
+          <p><a class="btn btn-default" href="bedroom" role="button">Bedroom &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+         <div class="col-lg-4">
+          <img class="img-circle" src="{% static 'images/message.jpg' %}" alt="search" width="120" height="120">
+          <h2>Message Board</h2>
+          <p>You can leave a message for renting </p>
+          <p><a class="btn btn-default" href="/Post" role="button">Leave message &raquo;</a></p>
+        </div>
+<
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{##}
+</div>
+</div>
+
+{% endblock %}
